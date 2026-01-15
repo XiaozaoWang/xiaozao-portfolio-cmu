@@ -40,17 +40,6 @@ export function getTagColor(tag: string): string {
 
 export const posts: PostMetadata[] = [
   {
-    slug: "algorithmic-nature",
-    title: "Algorithmic Nature",
-    description:
-      "Is nature the only version possible? Can algorithms reveal unrealized natures?",
-    tags: ["generative art", "physical computing", "speculative design"],
-    featured: false,
-    time: "2025",
-    image: "/blog-images/an3/sn2.jpg",
-    type: "individual",
-  },
-  {
     slug: "interactive-neural-networks",
     title: "Interactive Neural Networks",
     description: "How to make machine learning more intuitive for beginners?",
@@ -70,6 +59,28 @@ export const posts: PostMetadata[] = [
     time: "2025",
     image: "/blog-images/iw3/c.jpg",
     type: "individual",
+  },
+  {
+    slug: "algorithmic-nature",
+    title: "Algorithmic Nature",
+    description:
+      "Is nature the only version possible? Can algorithms reveal unrealized natures?",
+    tags: ["generative art", "physical computing", "speculative design"],
+    featured: false,
+    time: "2025",
+    image: "/blog-images/an3/sn2.jpg",
+    type: "individual",
+  },
+  {
+    slug: "city-of-all",
+    title: "City of All",
+    description:
+      "Blending emerging technology into Disney Imagineering to discover hidden networks of non-human travelers.",
+    tags: ["creative design", "XR", "physical computing"],
+    featured: false,
+    time: "2025",
+    image: "/blog-images/disney/c-.png",
+    type: "team",
   },
   {
     slug: "digital-blossoms",
@@ -92,17 +103,6 @@ export const posts: PostMetadata[] = [
     time: "2024",
     image: "/blog-images/sound/c.png",
     type: "individual",
-  },
-  {
-    slug: "city-of-all",
-    title: "City of All",
-    description:
-      "Blending emerging technology into Disney Imagineering to discover hidden networks of non-human travelers.",
-    tags: ["creative design", "XR", "physical computing"],
-    featured: false,
-    time: "2025",
-    image: "/blog-images/disney/c-.png",
-    type: "team",
   },
   {
     slug: "a-flowing-painting",
