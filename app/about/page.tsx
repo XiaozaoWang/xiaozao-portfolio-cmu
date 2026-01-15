@@ -37,8 +37,8 @@ export default function AboutPage() {
               Inventing technologies of curiosity.
             </h1>
             <p className="leading-relaxed">
-              I am a multidisciplinary creative technologist working at the
-              intersection of{" "}
+              Hiiiiiiiiii I am a multidisciplinary creative technologist working
+              at the intersection of{" "}
               <span className="text-blue-600 dark:text-blue-400 font-semibold">
                 coding
               </span>
