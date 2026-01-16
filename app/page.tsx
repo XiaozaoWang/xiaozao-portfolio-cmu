@@ -31,7 +31,7 @@ export default function Page() {
       </div>
 
       {/* New version callout */}
-      {showCallout && (
+      {/* {showCallout && (
         <div className="absolute top-12 left-1/2 transform -translate-x-1/2 z-10">
           <div className="bg-white/15 backdrop-blur-md rounded-xl px-8 py-5 border border-white/30 shadow-lg max-w-xl relative">
             <button
@@ -66,7 +66,7 @@ export default function Page() {
             </p>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }

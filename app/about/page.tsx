@@ -34,17 +34,17 @@ export default function AboutPage() {
           {/* Bio */}
           <div className="md:col-span-3 space-y-4 text-gray-700 dark:text-gray-300">
             <h1 className="!text-4xl font-semibold !text-blue-500 dark:!text-white">
-              Inventing technologies of curiosity.
+              Inventing technologies for curiosity.
             </h1>
             <p className="leading-relaxed">
-              I am a multidisciplinary creative technologist working
-              at the intersection of{" "}
+              Hi! I'm Xiaozao. I am a multidisciplinary creative technologist
+              working at the intersection of{" "}
               <span className="text-blue-600 dark:text-blue-400 font-semibold">
                 coding
               </span>
               ,{" "}
               <span className="text-red-600 dark:text-red-400 font-semibold">
-                art
+                design
               </span>
               , and{" "}
               <span className="text-green-600 dark:text-greens-400 font-semibold">
@@ -140,7 +140,7 @@ export default function AboutPage() {
               href="https://drive.google.com/file/d/1OXUjBzPSsfFgnClLWYodHUKyra_qt-TS/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+              className="text-sm font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline transition-colors"
             >
               download cv
             </a>
@@ -150,7 +150,16 @@ export default function AboutPage() {
             <span className="text-gray-400 dark:text-gray-600">•</span>
             <span>xw2194@nyu.edu</span>
             <span className="text-gray-400 dark:text-gray-600">•</span>
-            <span>xiaozaowang.art</span>
+            <span>xiaozaowang.world</span>
+            <span className="text-gray-400 dark:text-gray-600">•</span>
+            <a
+              href="https://github.com/XiaozaoWang"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline transition-colors"
+            >
+              github
+            </a>
           </div>
         </div>
 

@@ -14,7 +14,7 @@ export default function InteractiveNeuralNetworksPost() {
         {/* Info Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="md:col-span-1">
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            <h3 className="text-lg font-semibold text-blue-500 dark:text-blue-400">
               Abstract
             </h3>
             <p>
@@ -32,7 +32,7 @@ export default function InteractiveNeuralNetworksPost() {
 
             <p>
               Interactive Neural Networks is an educational exploration which
-              aims to enhance public’s understanding of neural networks by
+              aims to enhance public's understanding of neural networks by
               developing an interactive online guide that explains their inner
               workings. Through the use of text explanations, real-time
               simulations, and interactive graphics,{" "}
@@ -54,12 +54,12 @@ export default function InteractiveNeuralNetworksPost() {
           {/* Right Sidebar */}
           {/* space y 没用 */}
           <div className="space-y-2">
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            <h3 className="text-lg font-semibold text-blue-500 dark:text-blue-400">
               Toolkit
             </h3>
             <p>React.js, custom machine learning model, Arduino, electronics</p>
 
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            <h3 className="text-lg font-semibold text-blue-500 dark:text-blue-400">
               Exhibitions
             </h3>
             {/* no margin between the two p */}
@@ -73,14 +73,14 @@ export default function InteractiveNeuralNetworksPost() {
             </p>
             <p className="!mb-0 !mt-0">NYU Shanghai, Shanghai, China</p>
 
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            <h3 className="text-lg font-semibold text-blue-500 dark:text-blue-400">
               Conference
             </h3>
             <p className="!mb-0 !mt-0">
               COSA (Center for Open Source Arts) x NYU{" "}
               <a
                 href="https://accad.osu.edu/news/cosa-x-nyu-global-dialogues-creative-tools"
-                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                className="text-blue-800 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
               >
                 Machine Learning for Creative Coding Conference
               </a>
@@ -90,13 +90,13 @@ export default function InteractiveNeuralNetworksPost() {
                 href="https://docs.google.com/presentation/d/1M5xfaeLiY5PyC25rPTrvyXr9C6TKwTNz8YfzwJqj_9o/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                className="text-blue-800 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
               >
                 Slides
               </a>
             </p>
 
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            <h3 className="text-lg font-semibold text-blue-500 dark:text-blue-400">
               Links
             </h3>
 
@@ -106,7 +106,7 @@ export default function InteractiveNeuralNetworksPost() {
                 href="https://interactivenn.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                className="text-blue-800 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
               >
                 interactivenn.netlify.app
               </a>
@@ -116,10 +116,20 @@ export default function InteractiveNeuralNetworksPost() {
                 href="https://github.com/XiaozaoWang/Interactive-Neural-Networks"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                className="text-blue-800 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
               >
                 Github Repo
               </a>{" "}
+            </p>
+            <p>
+              This project has a continuation CS research{" "}
+              <a
+                href="/work/ee-eval"
+                className="text-blue-800 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+              >
+                EE-Eval
+              </a>
+              .
             </p>
           </div>
         </div>
@@ -127,7 +137,22 @@ export default function InteractiveNeuralNetworksPost() {
         {/* ============== Main Content ================= */}
         {/* Demo */}
         <div className="mt-12">
+          <h2 className="text-2xl font-bold mb-4">Intro Video</h2>
+          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              src="https://www.youtube.com/embed/Jq8VK7AzLT0?si=lGtDZH4QbucFLjEQ"
+              className="absolute top-0 left-0 w-full h-full rounded-lg"
+              allow="autoplay"
+              allowFullScreen
+            ></iframe>
+          </div>
           <h2 className="text-2xl font-bold mb-4">Demo</h2>
+          <p>
+            I designed and developed a full-stack system for robust user
+            experience. The audience have higher freedom to adjust every single
+            input, parameter, and customize the structure of the neural network
+            by dragging nodes together.
+          </p>
           <p className="!my-2">
             <strong>Explorable Explanation of a single perceptron:</strong>
           </p>
@@ -146,51 +171,88 @@ export default function InteractiveNeuralNetworksPost() {
             alt="MLP Demo"
             className="w-2/3 rounded-lg"
           />
-          <p className="!my-2">
-            <strong>Video Demo:</strong>
-          </p>
-          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-            <iframe
-              src="https://www.youtube.com/embed/ERDMJC7V_-Y?si=mO1By3YXFRCfj_rE"
-              className="absolute top-0 left-0 w-full h-full rounded-lg"
-              allow="autoplay"
-              allowFullScreen
-            ></iframe>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* 上下间隔 */}
+            <div className="!space-y-4">
+              <p className="!my-2">
+                <strong>Interaction Walkthrough - Exhibition Version</strong>
+              </p>
+              <div
+                className="relative w-full"
+                style={{ paddingBottom: "56.25%" }}
+              >
+                <iframe
+                  src="https://www.youtube.com/embed/zcDqx2Ysj90?si=5r84IX_gRggxzU97"
+                  className="absolute top-0 left-0 w-full h-full "
+                  allow="autoplay"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+            <div className="!space-y-4">
+              <p className="!my-2">
+                <strong>Interaction Walkthrough - Website Version</strong>
+              </p>
+              <div
+                className="relative w-full"
+                style={{ paddingBottom: "56.25%" }}
+              >
+                <iframe
+                  src="https://www.youtube.com/embed/ERDMJC7V_-Y?si=KhQAOmqXNLYKJmhw"
+                  className="absolute top-0 left-0 w-full h-full "
+                  allow="autoplay"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Design*/}
-        <div className="mt-12">
+        {/* <div className="mt-12">
           <h2 className="text-2xl font-bold mb-4">Design</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4  mr-4 mb-6 w-4/5">
             <ZoomableImage
               src="/blog-images/inn3/s1.jpg"
               alt="Image"
-              className="w-full h-auto"
+              className="w-full h-auto shadow-lg"
             />
             <ZoomableImage
               src="/blog-images/inn3/s2.jpg"
               alt="Image"
-              className="w-full h-auto"
+              className="w-full h-auto shadow-lg"
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 w-4/5 ">
             <ZoomableImage
               src="/blog-images/inn3/s3.jpg"
               alt="Image"
-              className="w-full h-auto"
+              className="w-full h-auto shadow-lg"
             />
             <ZoomableImage
               src="/blog-images/inn3/s4.jpg"
               alt="Image"
-              className="w-full h-auto"
+              className="w-full h-auto shadow-lg"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Exhibition */}
         <div className="mt-12">
           <h2 className="text-2xl font-bold mb-4">Exhibitions</h2>
+          <div className="space-y-2 mb-4">
+            <p className="font-semibold !mb-0 !mt-0">
+              <em>Art and Design Education: FutureLab, 2025</em>
+            </p>
+            <p className="!mt-0">West Bund Art Center, Shanghai, China</p>
+
+            <p className="font-semibold !mb-0 !mt-0">
+              <em>NYU Global Show & Tell, 2025</em>
+            </p>
+            <p className="!mb-0 !mt-0">NYU Shanghai, Shanghai, China</p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mr-4  mb-6">
             <ZoomableImage
               src="/blog-images/inn3/ex0.jpg"
@@ -216,28 +278,6 @@ export default function InteractiveNeuralNetworksPost() {
               className="w-full h-auto"
             />
           </div>
-
-          <p className="!my-2">
-            <strong>
-              Trailer Video for the Physical Installation (For Children):
-            </strong>
-          </p>
-          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-            <iframe
-              src="https://www.youtube.com/embed/PjvQ_i1lBPI?si=EXo-NFX9nFRT146v"
-              className="absolute top-0 left-0 w-full h-full rounded-lg"
-              allow="autoplay"
-              allowFullScreen
-            ></iframe>
-          </div>
-
-          {/* <Gallery
-            images={[
-              "/blog-images/inn3/ex_main.jpg",
-              "/blog-images/inn3/ex_kibo.jpg",
-              "/blog-images/inn3/ex_inter1.jpg",
-            ]}
-          /> */}
         </div>
 
         {/* Presentation */}
@@ -256,6 +296,33 @@ export default function InteractiveNeuralNetworksPost() {
               src="/blog-images/inn3/ex8.jpg"
               alt="Image"
               className="w-full h-auto"
+            />
+          </div>
+        </div>
+
+        {/* Detailed Process */}
+        <div className="mt-12">
+          <h2 className="text-2xl font-bold mb-4">Detailed Process</h2>
+          <div className="grid gap-4 mr-4  mb-6">
+            <ZoomableImage
+              src="/blog-images/inn3/a1.png"
+              alt="Image"
+              className="w-full h-auto shadow-lg"
+            />
+            <ZoomableImage
+              src="/blog-images/inn3/a2.png"
+              alt="Image"
+              className="w-full h-auto shadow-lg"
+            />
+            <ZoomableImage
+              src="/blog-images/inn3/a3.png"
+              alt="Image"
+              className="w-full h-auto shadow-lg"
+            />
+            <ZoomableImage
+              src="/blog-images/inn3/a4.png"
+              alt="Image"
+              className="w-full h-auto shadow-lg"
             />
           </div>
         </div>

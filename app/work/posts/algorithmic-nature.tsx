@@ -17,18 +17,20 @@ export default function AlgorithmicNaturePost() {
         {/* Info Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="md:col-span-1">
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            <h3 className="text-lg font-semibold text-red-800 dark:text-red-800">
               TL;DR:
             </h3>
-            <strong>
-              I explore nature as a dynamic computational process, using
-              generative algorithms to simulate alternative natural forms that
-              could exist but don’t. By materializing these patterns through 3D
-              printing and exhibiting them alongside real specimens, my work
-              invites viewers to imagine the vast, unrealized possibilities
-              hidden within nature’s code.
-            </strong>
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            <p className="text-red-800 dark:text-red-800">
+              <strong>
+                I explore nature as a dynamic computational process, using
+                generative algorithms to simulate alternative natural forms that
+                could exist but don't. By materializing these patterns through
+                3D printing and exhibiting them alongside real specimens, my
+                work invites viewers to imagine the vast, unrealized
+                possibilities hidden within nature's code.
+              </strong>
+            </p>
+            <h3 className="text-lg font-semibold text-red-800 dark:text-red-800">
               Abstract
             </h3>
             <p>
@@ -77,12 +79,12 @@ export default function AlgorithmicNaturePost() {
 
           {/* Right Sidebar */}
           <div className="space-y-2">
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            <h3 className="text-lg font-semibold text-red-800 dark:text-red-800">
               Toolkit
             </h3>
             <p>javascript, 3d printing, electronics, natural specimen</p>
 
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            <h3 className="text-lg font-semibold text-red-800 dark:text-red-800">
               Exhibitions
             </h3>
             {/* no margin between the two p */}
@@ -101,7 +103,7 @@ export default function AlgorithmicNaturePost() {
             </p>
             <p className="!mb-0 !mt-0">NYU Shanghai, Shanghai, China</p>
 
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            <h3 className="text-lg font-semibold text-red-800 dark:text-red-800">
               Award
             </h3>
             <p className="font-semibold !mb-0 !mt-0">
@@ -113,7 +115,7 @@ export default function AlgorithmicNaturePost() {
               NYU Shanghai Interactive Media Arts, 2025
             </p>
 
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            <h3 className="text-lg font-semibold text-red-800 dark:text-red-800">
               Links
             </h3>
 
@@ -154,9 +156,62 @@ export default function AlgorithmicNaturePost() {
           </div>
         </div>
 
+        {/* Design */}
+        <div className="mt-12">
+          <h2 className="text-2xl font-bold mb-4">Exhibition Design</h2>
+          <p>
+            In this project, I generate “alternative” natural patterns that
+            could exist but don’t. By materializing these patterns through 3D
+            printing and exhibiting them alongside real specimens in a natural
+            history museum setting, my work invites viewers to imagine the vast,
+            unrealized possibilities hidden within nature’s code.
+          </p>
+          <ZoomableImage
+            src="/blog-images/an3/e1.png"
+            alt="image"
+            className="w-4/5"
+          />
+          <h2 className="text-2xl font-bold mb-4">Algorithmic Exploration</h2>
+          <p>
+            <strong>Through extensive coding experiments,</strong> I explore how
+            nature-inspired algorithms can be used to imagine an “alternative
+            nature.”
+          </p>
+          <p>
+            In three explorations: plant branching, snowflakes, and shell
+            surfaces, I deliberately manipulated parameters to generate patterns
+            that don’t exist in nature but trigger uncanny familiarity.
+          </p>
+          <ZoomableImage
+            src="/blog-images/an3/e2.png"
+            alt="image"
+            className="w-3/4"
+          />
+          <ZoomableImage
+            src="/blog-images/an3/e3.png"
+            alt="image"
+            className="w-3/5"
+          />
+          <ZoomableImage
+            src="/blog-images/an3/e4.png"
+            alt="image"
+            className="w-3/5"
+          />
+          <ZoomableImage
+            src="/blog-images/an3/e5.png"
+            alt="image"
+            className="w-4/5"
+          />
+        </div>
+
         {/* Project Images */}
         <div className="mt-12">
           <h2 className="text-2xl font-bold mb-4">Project Images</h2>
+          <p>
+            The generative results are materialized through 3D printing and
+            exhibited alongside real specimens in a natural history museum
+            setting.
+          </p>
           {/* Overview */}
           <p className="!my-2">
             <strong>Installation Overview</strong>
@@ -173,7 +228,7 @@ export default function AlgorithmicNaturePost() {
             <strong>Part 1: Plant Branching</strong>
           </p>
 
-          <div className="mb-8 w-9/10">
+          <div className="mb-0 w-9/10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* 上下间隔 */}
               <div className="!space-y-4">
@@ -207,13 +262,18 @@ export default function AlgorithmicNaturePost() {
               </div>
             </div>
           </div>
+          <ZoomableImage
+            src="/blog-images/an3/a1.png"
+            alt="image"
+            className="w-4/5"
+          />
 
           {/* Part 2 */}
           <p className="!my-2">
             <strong>Part 2: Snowflakes</strong>
           </p>
 
-          <div className="mb-8 w-9/10">
+          <div className="mb-0 w-9/10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* 上下间隔 */}
               <div className="!space-y-4">
@@ -242,13 +302,18 @@ export default function AlgorithmicNaturePost() {
               </div>
             </div>
           </div>
+          <ZoomableImage
+            src="/blog-images/an3/a2.png"
+            alt="image"
+            className="w-4/5"
+          />
 
           {/* Part 3 */}
           <p className="!my-2">
             <strong>Part 3: Shell Surfaces</strong>
           </p>
 
-          <div className="mb-8 w-9/10">
+          <div className="mb-0 w-9/10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* 上下间隔 */}
               <div className="!space-y-4">
@@ -257,26 +322,21 @@ export default function AlgorithmicNaturePost() {
                   alt="image"
                   className=""
                 />
+              </div>
+              <div className="!space-y-4">
                 <ZoomableImage
                   src="/blog-images/an3/sh2.jpg"
                   alt="image"
                   className=""
                 />
               </div>
-              <div className="!space-y-4">
-                <ZoomableImage
-                  src="/blog-images/an3/sh3.jpg"
-                  alt="image"
-                  className=""
-                />
-                <ZoomableImage
-                  src="/blog-images/an3/sh4.jpg"
-                  alt="image"
-                  className=""
-                />
-              </div>
             </div>
           </div>
+          <ZoomableImage
+            src="/blog-images/an3/a3.png"
+            alt="image"
+            className="w-4/5"
+          />
 
           {/* Part 3 */}
           <p className="!my-2">
@@ -352,7 +412,7 @@ export default function AlgorithmicNaturePost() {
 
         {/* Process */}
         <div className="mt-12">
-          <h2 className="text-2xl font-bold mb-4">Development Process</h2>
+          <h2 className="text-2xl font-bold mb-4">Detailed Process</h2>
           <div className="grid grid-cols-1 gap-4 mr-4 mb-6 w-9/10">
             <ZoomableImage
               src="/blog-images/an3/p1.jpg"

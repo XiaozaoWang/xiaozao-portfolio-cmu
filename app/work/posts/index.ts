@@ -28,6 +28,9 @@ export const tagColorMap: Record<string, string> = {
   "science visualization": "#3B82F6",
   "live performance": "#49bab4ff",
   "motion capture": "#7b5febff",
+  "multi-agent systems": "#8B5CF6",
+  "generative AI": "#06B6D4",
+  hci: "#10B981",
 
   // 默认颜色（如果tag不在映射中）
   default: "#6B7280", // 灰色
@@ -83,6 +86,18 @@ export const posts: PostMetadata[] = [
     type: "team",
   },
   {
+    slug: "ee-eval",
+    title: "EE-Eval",
+    description:
+      "A CS research on Automated Assessment of AI-Generated Explorable Explanations",
+    tags: ["multi-agent systems", "generative AI", "hci"],
+    featured: false,
+    time: "2025",
+    image: "/blog-images/ee/c1.png",
+    type: "team",
+  },
+
+  {
     slug: "digital-blossoms",
     title: "Digital Blossoms",
     description:
@@ -104,6 +119,7 @@ export const posts: PostMetadata[] = [
     image: "/blog-images/sound/c.png",
     type: "individual",
   },
+
   {
     slug: "a-flowing-painting",
     title: "A Flowing Painting",

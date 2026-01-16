@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-type CircleType = "coding" | "art" | "education" | null;
+type CircleType = "coding" | "design" | "education" | null;
 
 const content = {
   coding: {
@@ -16,38 +16,35 @@ const content = {
           </strong>
         </p>
         <p className="mb-3">
-          With a dual background in Computer Science and Interactive Media, I
-          was trained rigorously in algorithms, data structures, and
-          systems-level programming while maintaining a critical
-          interdisciplinary perspective.
+          With a dual background in <strong>Computer Science</strong> and{" "}
+          <strong>Interactive Media</strong>, I span practice through software
+          engineering, machine learning, computational design, AR/VR, digital
+          fabrication, while maintaining a critical interdisciplinary
+          perspective.
         </p>
-        <p>
+        {/* <p>
           I believe technology is never the destination, only the vehicle.
           Guided by this, I focus my practice on how technology can serve as a
           medium to reshape human perception and deepen our engagement with the
           world and one another.
-        </p>
+        </p> */}
       </>
     ),
     color: "rgb(37, 99, 235)", // blue-600
     image: "/about-images/v4.jpg",
   },
-  art: {
-    title: "Art",
+  design: {
+    title: "Design",
     description: (
       <>
         <p className="mb-3">
           <strong>
-            I am a creative mind that sees the world in "what-ifs."
+            I am a creative mind that sees the world in "what-ifs,"
           </strong>{" "}
-          I approach problems through artistic inquiry, using imagination and
-          experimentation to reframe perception and design experiences.
+          using design as a way to question, prototype, and reframe how
+          technological systems shape human experience.
         </p>
-        <p className="mb-3">
-          My practice spans interactive installations, speculative narratives,
-          and exhibition-based works, often blending visual design with
-          computational and spatial thinking.
-        </p>
+
         <p>
           In collaborative settings, I spark unconventional ideas that open new
           directions for a team. As the team leader of a nationwide third-place
@@ -57,7 +54,7 @@ const content = {
       </>
     ),
     color: "rgb(220, 38, 38)", // red-600
-    image: "/about-images/v3.jpg",
+    image: "/about-images/v7.jpg",
   },
   education: {
     title: "Education",
@@ -69,10 +66,6 @@ const content = {
             curiosity.
           </strong>{" "}
           I believe the future of education isn't passive but immersive.
-        </p>
-        <p className="mb-3">
-          My vision is to transform "knowledge delivery" into active, embodied
-          exploration through emerging technologies.
         </p>
         <p>
           From teaching Scratch and English to migrant children, to supporting
@@ -110,7 +103,6 @@ export function VennDiagram() {
             strokeWidth="2"
             className="cursor-pointer transition-all duration-300"
             onMouseEnter={() => setActiveCircle("coding")}
-            onMouseLeave={() => setActiveCircle(null)}
           />
           <text
             x="90"
@@ -122,18 +114,17 @@ export function VennDiagram() {
             Coding
           </text>
 
-          {/* Art Circle - Top Right */}
+          {/* design Circle - Top Right */}
           <circle
             cx="260"
             cy="140"
             r="100"
             fill="rgb(239, 68, 68)"
-            fillOpacity={activeCircle === "art" ? "0.5" : "0.2"}
+            fillOpacity={activeCircle === "design" ? "0.5" : "0.2"}
             stroke="rgb(220, 38, 38)"
             strokeWidth="2"
             className="cursor-pointer transition-all duration-300"
-            onMouseEnter={() => setActiveCircle("art")}
-            onMouseLeave={() => setActiveCircle(null)}
+            onMouseEnter={() => setActiveCircle("design")}
           />
           <text
             x="310"
@@ -142,7 +133,7 @@ export function VennDiagram() {
             fill="rgb(220, 38, 38)"
             className="text-sm font-semibold pointer-events-none select-none"
           >
-            Art
+            Design
           </text>
 
           {/* Education Circle - Bottom Center */}
@@ -156,7 +147,6 @@ export function VennDiagram() {
             strokeWidth="2"
             className="cursor-pointer transition-all duration-300"
             onMouseEnter={() => setActiveCircle("education")}
-            onMouseLeave={() => setActiveCircle(null)}
           />
           <text
             x="200"
@@ -191,7 +181,7 @@ export function VennDiagram() {
       </div>
 
       {/* Content Display */}
-      <div className="h-[600px] flex items-start !pt-0 overflow-hidden">
+      <div className="h-[600px] flex items-stdesign !pt-0 overflow-hidden">
         {activeCircle ? (
           <div className="space-y-3 animate-in fade-in duration-300 overflow-y-auto max-h-full pr-2">
             <h3
@@ -200,11 +190,11 @@ export function VennDiagram() {
             >
               {content[activeCircle].title}
             </h3>
-            <div className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="text-gray-700 dark:text-gray-300 leading-relaxed">
               {content[activeCircle].description}
             </div>
             {content[activeCircle].image && (
-              <div className="mt-4 relative w-full h-48">
+              <div className="mt-4 relative w-full h-64">
                 <Image
                   src={content[activeCircle].image}
                   alt={content[activeCircle].title}

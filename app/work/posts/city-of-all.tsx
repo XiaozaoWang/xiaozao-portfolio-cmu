@@ -62,7 +62,7 @@ export default function CityOfAllPost() {
             <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
               Award
             </h3>
-            <p className="font-semibold !mb-0 !mt-0">
+            <p className="font-semibold !mb-0 !mt-0 !text-orange-600 dark:!text-orange-400">
               <em>Nationwide 3rd Place</em>
             </p>
             <p className="!mb-0 !mt-0">
@@ -70,14 +70,15 @@ export default function CityOfAllPost() {
             </p>
 
             <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              My Role
+            </h3>
+            <p>Team Leader, Core Concept Design</p>
+
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
               Collaborators
             </h3>
             <p>Andy Ye, Ash Yang, Linda Shao</p>
 
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-              My Role
-            </h3>
-            <p>Team Leader, Core Concept Design</p>
             <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
               Links
             </h3>
@@ -135,16 +136,14 @@ export default function CityOfAllPost() {
             </div>
           </div>
           <h2 className="text-2xl font-bold mb-4">Project Details</h2>
-          <div className="grid gap-8 w-4/5">
+          <p className="">
+            <strong>Space and Interaction Design:</strong>
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* 上下间隔 */}
             <div className="!space-y-4">
               <ZoomableImage
                 src="/blog-images/disney/c.png"
-                alt="image"
-                className=""
-              />
-              <ZoomableImage
-                src="/blog-images/disney/c1.jpg"
                 alt="image"
                 className=""
               />
@@ -154,12 +153,19 @@ export default function CityOfAllPost() {
                 className=""
               />
               <ZoomableImage
-                src="/blog-images/disney/c3.jpg"
+                src="/blog-images/disney/c4.jpg"
+                alt="image"
+                className=""
+              />
+            </div>
+            <div className="!space-y-4">
+              <ZoomableImage
+                src="/blog-images/disney/c1.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/blog-images/disney/c4.jpg"
+                src="/blog-images/disney/c3.jpg"
                 alt="image"
                 className=""
               />
@@ -168,13 +174,31 @@ export default function CityOfAllPost() {
                 alt="image"
                 className=""
               />
+            </div>
+          </div>
+
+          <p className="!mt-10">
+            <strong>Technical Development:</strong>
+          </p>
+          <p>
+            <strong>
+              Through hand tracking, we turn the carriage window into an
+              interface to interact with ancient sea creatures that once lived
+              in Shanghai.
+            </strong>
+          </p>
+          <p>
+            <strong>
+              Through AR and kinetic installations, we build a responsive
+              environment where the passengers can discover the routes of
+              non-human travellers along their travel.
+            </strong>
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* 上下间隔 */}
+            <div className="!space-y-4">
               <ZoomableImage
                 src="/blog-images/disney/c6.jpg"
-                alt="image"
-                className=""
-              />
-              <ZoomableImage
-                src="/blog-images/disney/c7.jpg"
                 alt="image"
                 className=""
               />
@@ -184,22 +208,29 @@ export default function CityOfAllPost() {
                 className=""
               />
               <ZoomableImage
-                src="/blog-images/disney/c9.jpg"
-                alt="image"
-                className=""
-              />
-              <ZoomableImage
                 src="/blog-images/disney/c10.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/blog-images/disney/c11.jpg"
+                src="/blog-images/disney/c12.jpg"
+                alt="image"
+                className=""
+              />
+            </div>
+            <div className="!space-y-4">
+              <ZoomableImage
+                src="/blog-images/disney/c7.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/blog-images/disney/c12.jpg"
+                src="/blog-images/disney/c9.jpg"
+                alt="image"
+                className=""
+              />
+              <ZoomableImage
+                src="/blog-images/disney/c11.jpg"
                 alt="image"
                 className=""
               />

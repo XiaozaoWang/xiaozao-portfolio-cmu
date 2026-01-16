@@ -16,6 +16,7 @@ const postComponents = {
   prism: () => import("./posts/prism"),
   "daughter-of-nature": () => import("./posts/daughter-of-nature"),
   comments: () => import("./posts/comments"),
+  "ee-eval": () => import("./posts/ee-eval"),
 };
 
 export function getBlogPosts(): PostMetadata[] {
